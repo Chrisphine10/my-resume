@@ -16,7 +16,6 @@ $(function() {
             $.ajax({
                 url: "contact.php",
                 type: "POST",
-                header: 'Access-Control-Allow-Origin: *',
                 data: {
                     name: name,
                     email: email,
