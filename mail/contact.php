@@ -19,7 +19,11 @@ $to = "ondiekchrisphine@gmail.com"; // Change this email to your //
 $subject = "$m_subject:  $name";
 $body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\n\nEmail: $email\n\nSubject: $m_subject\n\nMessage: $message";
 $header = "From: $email";
-$header .= "Reply-To: $email";	
+$header .= "Reply-To: $email";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+
 
 if(!mail($to, $subject, $body, $header))
   http_response_code(500);
