@@ -1,5 +1,5 @@
 $(function() {
-
+    header('Access-Control-Allow-Origin: *');
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {},
