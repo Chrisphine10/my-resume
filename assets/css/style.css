@@ -597,7 +597,7 @@ body {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #EF233C;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .footer .container-fluid {
